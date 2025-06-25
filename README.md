@@ -2,11 +2,11 @@
 
 [![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue)](https://www.python.org/)
 [![Apache Spark](https://img.shields.io/badge/spark-3.5.0-orange)](https://spark.apache.org/)
-[![Dataset Size](https://img.shields.io/badge/dataset-480 MB-green)](#dataset)
+[![Dataset Size](https://img.shields.io/badge/dataset-480%20MB-green)](#dataset)
 [![Last Commit](https://img.shields.io/github/last-commit/turancannb02/bigdata-taxi-spark)](https://github.com/turancannb02/bigdata-taxi-spark/commits/main)
 
 A single-container Apache Spark environment and executed Jupyter notebook that demonstrate big-data ETL and a Random-Forest regression model for predicting yellow-taxi trip duration.  
-Created for the Big-Data Analytics assignment (Semester 2, BSBI).
+Created for the Big-Data Analytics assignment (Semester 3, BSBI).
 
 ---
 
@@ -34,9 +34,16 @@ Created for the Big-Data Analytics assignment (Semester 2, BSBI).
 | Notebook       | JupyterLab 4 in a Python virtualenv  |
 
 
-├── docker-compose.yml
-├── requirements.txt
-└── nyc_taxi_duration.ipynb ← executed notebook with results
+<pre><code>
+bigdata-lab/
+  ├── data/ # Parquet files 
+  ├── venv/ # Python virtual environment 
+  ├── docker-compose.yml # Single-service Spark container 
+  ├── nyc_taxi_duration.ipynb # Executed notebook with model results 
+  ├── README.md # Project description and usage 
+  ├── requirements.txt # Python dependencies 
+  └── test.py # test script to check the .parquet file
+</code></pre>
 
 ### Quick start
 
@@ -48,7 +55,7 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
-## 3. Dataset <a name="dataset"></a>
+## 3. Dataset 
 
 - File yellow_tripdata_2025-05.parquet
 - Size ≈ 480 MB
