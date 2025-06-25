@@ -1,0 +1,12 @@
+# docker-compose.yml  (overwrite everything with this)
+services:
+  spark:
+    image: apache/spark:3.5.0               # ✅ real tag on Docker Hub
+    command: /bin/bash                      # start idle shell
+    environment:
+      - PYSPARK_PYTHON=python3
+      - PYSPARK_DRIVER_PYTHON=python3
+    volumes:
+      - ./data:/opt/workspace/data          # <-- your Parquet lives here
+    ports:
+      - "4040:4040"
