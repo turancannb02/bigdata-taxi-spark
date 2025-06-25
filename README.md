@@ -33,7 +33,7 @@ Created for the Big-Data Analytics assignment (Semester 3, BSBI).
 | Orchestration  | Docker Compose (single service)      |
 | Notebook       | JupyterLab 4 in a Python virtualenv  |
 
-
+### Project Layout
 <pre><code>
 bigdata-lab/
   ├── data/ # Parquet files 
