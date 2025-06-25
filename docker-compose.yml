@@ -1,12 +1,13 @@
-# docker-compose.yml  (overwrite everything with this)
+# docker-compose.yml  file to set up an Apache Spark environment using Docker Compose.
+# This configuration uses the official Apache Spark image from Docker Hub.
 services:
   spark:
-    image: apache/spark:3.5.0               # ✅ real tag on Docker Hub
+    image: apache/spark:3.5.0               # real tag on Docker Hub
     command: /bin/bash                      # start idle shell
     environment:
       - PYSPARK_PYTHON=python3
       - PYSPARK_DRIVER_PYTHON=python3
     volumes:
-      - ./data:/opt/workspace/data          # <-- your Parquet lives here
+      - ./data:/opt/workspace/data          
     ports:
       - "4040:4040"

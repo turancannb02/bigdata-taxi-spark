@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-df = pd.read_parquet('/home/tur24958/bigdata-lab/data/nyc_yellow_2023-01.parquet')
+df = pd.read_parquet('/home/turancannb02/bigdata-lab/data/nyc_yellow_2023-01.parquet')
 
 print("Shape:", df.shape)          # Rows, columns
 print("\nColumn Names:\n", df.columns.tolist())
